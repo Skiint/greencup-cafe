@@ -1,0 +1,211 @@
+/*==================================================
+                RESPONSIVE.CSS
+==================================================*/
+
+/*========================
+        TABLET
+=========================*/
+
+@media (max-width: 1024px){
+
+    .hero h1{
+        font-size:56px;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero p{
+        margin:auto;
+    }
+
+    .hero-stats{
+        justify-content:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-right{
+        margin-top:60px;
+    }
+
+    .categories-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .products-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .special-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .reviews-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:30px;
+    }
+
+    .about-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .about-list{
+        grid-template-columns:1fr;
+    }
+
+    .offer-box{
+        grid-template-columns:1fr;
+        text-align:center;
+        padding:50px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+/*========================
+        MOBILE
+=========================*/
+
+@media (max-width: 768px){
+
+    section{
+        padding:80px 0;
+    }
+
+    .navbar{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:80%;
+        height:100vh;
+        background:#fff;
+        box-shadow:-10px 0 30px rgba(0,0,0,.1);
+        transition:.4s;
+        padding:100px 40px;
+    }
+
+    .navbar.open{
+        right:0;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .categories-grid,
+    .products-grid,
+    .features-grid,
+    .special-grid,
+    .reviews-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:32px;
+    }
+
+    .offer-content h2{
+        font-size:34px;
+    }
+
+    .contact-info h2{
+        font-size:32px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .header-buttons button{
+        width:42px;
+        height:42px;
+        font-size:16px;
+    }
+
+    .scroll-top{
+        width:50px;
+        height:50px;
+        font-size:20px;
+        right:20px;
+        bottom:20px;
+    }
+}
+
+/*========================
+        SMALL MOBILE
+=========================*/
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero-tag{
+        font-size:12px;
+    }
+
+    .btn{
+        padding:14px 24px;
+        font-size:14px;
+    }
+
+    .product-content h3{
+        font-size:22px;
+    }
+
+    .product-bottom h4{
+        font-size:24px;
+    }
+
+    .floating-card{
+        display:none;
+    }
+
+    .floating-price{
+        width:90px;
+        height:90px;
+    }
+}
